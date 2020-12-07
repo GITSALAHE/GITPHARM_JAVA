@@ -188,7 +188,7 @@ public class main {
 							String email = scanner.next();
 							System.out.println("Phone number");
 							String telephone = scanner.next();
-							int countPurchase = 0;
+							int countPurchase = 1;
 							Client client = new Client(id, firstName, lastName, email, telephone, countPurchase);
 							clientArrayList.add(client);
 							System.out.println("client added successfuly with id "+ id);
@@ -237,8 +237,11 @@ public class main {
 							break;
 							
 						case 6:
+							System.out.format("%10s %10s %10s %10s %10s %10s", "id", "first Name", "last name", "Phone number", "email", "number purchase\n");
+
 							for(int i = 0;i < clientArrayList.size(); i++) {
 								if(clientArrayList.get(i).getCountPurchase() >= 3) {
+									
 									System.out.format("%10s %10s %10s %10s %10s %10s",
 											clientArrayList.get(i).getId(), clientArrayList.get(i).getFirstName(),
 											clientArrayList.get(i).getLastName(), clientArrayList.get(i).getTelephone(),
