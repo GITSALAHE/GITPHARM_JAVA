@@ -1,10 +1,16 @@
-package pharmacie;
+package com.pharm.models;
 
 public class Drugs {
-	private int id;
+
+    private int id;
 	private String nameDrugString;
 	private String descString;
-	private float price;
+    private float price;
+	
+	public Drugs(){
+		
+	}
+
 	public Drugs(int id, String nameDrugString, String descString, float price) {
 		this.id = id;
 		this.nameDrugString = nameDrugString;
@@ -40,6 +46,4 @@ public class Drugs {
 	public void setPrice(float price) {
 		this.price = price;
 	}
-	
-
 }

@@ -1,6 +1,6 @@
-package pharmacie;
+package com.pharm.models;
 
-public class person {
+public class Person{
 		
 		private int id;
 		private String firstName;
@@ -8,14 +8,17 @@ public class person {
 		private String email;
 		private String telephone;
 		
-		public person(int id, String firstName, String lastName, String email, String telephone) {
-			// TODO Auto-generated constructor stub
+		public Person(int id, String firstName, String lastName, String email, String telephone) {
 			this.id =id;
 			this.firstName=firstName;
 			this.lastName=lastName;
 			this.email=email;
 			this.telephone=telephone;
 		}
+		public Person(){
+			
+		}
+	
 
 		public int getId() {
 			return id;
